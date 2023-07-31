@@ -1,0 +1,245 @@
+:root {
+    --white: #f1f1f1;
+    --black: #313131;
+    --button-blue: #0285A1;
+    --light-gray: #787878;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:ital,wght@0,300;1,300&display=swap');
+/* Reset */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Main Styling */
+header {
+    position: relative;
+    background: no-repeat center center;
+    background-color: #6c757d;
+    background-attachment: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: var(--black);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1, h2, h3 {
+    margin: 10px 0px;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+p {
+    margin: 5px 0px;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header::before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+header * {
+    z-index: 10;
+}
+
+
+/* Navbar */
+#navbar {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar .logo {
+    font-weight: bolder;
+    font-family: 'Lilita One', cursive;
+    color: var(--white);
+}
+
+#navbar .menu {
+    display: flex;
+    margin-top: 20px;
+}
+
+.menu li {
+    margin: 0 15px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.menu li a {
+    color: var(--white);
+}
+
+.menu li a:hover {
+    color: #f1f1f1bf;
+}
+
+/* Content */
+.content {
+    max-width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.content .main {
+    font-family: 'Lilita One', cursive;
+    font-size: 5em;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.content p {
+    color: var(--white);
+    font-size: 1.8em;
+    font-weight: 100;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #FFFFFF;
+}
+
+section {
+    width: 600px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.457);
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+section h2 {
+    font-family: 'Lilita One', cursive;
+}
+
+section a {
+    color: var(--black);
+}
+
+.post-info {
+    font-family: 'Dai Banna SIL', serif;
+    color: var(--light-gray);
+    font-size: 1.2em;
+}
+
+.button {
+    margin: 20px 0;
+    padding: 10px 20px;
+    color: var(--white);
+    display: block;
+    background-color: var(--button-blue);
+    letter-spacing: 0.05em;
+    border-radius: 2px;
+    margin-left: 430px;
+}
+
+.button:visited {
+    color: var(--white);
+}
+
+.fa-arrow-right {
+    padding-left: 5px;
+}
+
+.link {
+    color: var(--black);
+    font-family: 'Dai Banna SIL', serif;
+}
+
+.post-heading:hover {
+    color: var(--button-blue);
+}
+
+.link:hover {
+    color: var(--button-blue);
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    padding: 3em;
+    height: 70px;
+    color: var(--black);
+    margin-top: 0;
+    text-align: center;
+}
+
+.copyright {
+    font-family: 'Dai Banna SIL', serif;
+    padding-bottom: 3em;
+    font-size: 1.2em;
+    color: var(--light-gray);
+}
+
+.icons i {
+    font-size: 3em;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    border: none;
+    border-bottom: 1px solid var(--light-gray);
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+
+button {
+    border: none;
+}
+
+/* About */
+
+.about {
+    padding: 10px 0;
+}
+
+.about p {
+    line-height: 1.4em;
+    margin: 10px 0;
+    text-align: justify;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2em;
+}
